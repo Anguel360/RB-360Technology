@@ -9,7 +9,7 @@ async function uploadImage() {
     formData.append('image', input.files[0]);
   
     try {
-      const response = await fetch('http://localhost:5000/remove-background', {
+      const response = await fetch('https://rb-api-mp04.onrender.com/remove-background', {
         method: 'POST',
         body: formData
       });
